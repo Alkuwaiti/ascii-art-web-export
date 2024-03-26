@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Art</title>
+  </head>
+  <body>
+    <h1>ASCII Art Generator</h1>
+    <form method="post" action="/ascii-art">
+      <label for="textInput">Text:</label>
+      <input type="text" id="textInput" name="text" required /><br /><br />
+
+      <input
+        type="radio"
+        id="standard"
+        name="style"
+        value="standard"
+        required
+      />
+      <label for="standard">Standard</label><br />
+
+      <input type="radio" id="shadow" name="style" value="shadow" required />
+      <label for="shadow">Shadow</label><br />
+
+      <input
+        type="radio"
+        id="thinkertoy"
+        name="style"
+        value="thinkertoy"
+        required
+      />
+      <label for="thinkertoy">Thinkertoy</label><br /><br />
+
+      <input type="submit" value="Generate ASCII Art" />
+    </form>
+  </body>
+</html>
